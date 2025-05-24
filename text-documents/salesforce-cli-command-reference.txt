@@ -1,68 +1,68 @@
-Salesforce CLI Commands Reference
+# Salesforce CLI Commands Reference
 
-Org Commands
-    sfdx force:org:create — Create a scratch org
-    sfdx force:org:list — List all orgs
-    sfdx force:org:open — Open a Salesforce org in the browser
-    sfdx force:org:delete — Delete a scratch org
-    sfdx force:org:display — Display details about a specific org
-    sfdx force:org:clone — Clone an existing org
-    sfdx force:org:shape:create — Create org shape for shape-based scratch orgs
+## Org Commands
+- `sf org create` — Create a scratch org  
+- `sf org list` — List all orgs  
+- `sf org open` — Open a Salesforce org in the browser  
+- `sf org delete` — Delete a scratch org  
+- `sf org display` — Display details about a specific org  
+- `sf org clone` — Clone an existing org  
+- `sf org shape create` — Create org shape for shape-based scratch orgs  
 
-Data Commands
-    sfdx force:data:soql:query — Run a SOQL query
-    sfdx force:data:record:create — Create a record
-    sfdx force:data:record:update — Update a record
-    sfdx force:data:record:delete — Delete a record
-    sfdx force:data:tree:import — Import data from JSON files
-    sfdx force:data:tree:export — Export data as JSON files
+## Data Commands
+- `sf data soql query` — Run a SOQL query  
+- `sf data record create` — Create a record  
+- `sf data record update` — Update a record  
+- `sf data record delete` — Delete a record  
+- `sf data tree import` — Import data from JSON files  
+- `sf data tree export` — Export data as JSON files  
 
-Apex Commands
-    sfdx force:apex:execute — Execute anonymous Apex code
-    sfdx force:apex:test:run — Run Apex tests
-    sfdx force:apex:log:get — Retrieve Apex debug logs
-    sfdx force:apex:log:list — List Apex debug logs
-    sfdx force:apex:log:tail — Stream Apex debug logs
+## Apex Commands
+- `sf apex execute` — Execute anonymous Apex code  
+- `sf apex test run` — Run Apex tests  
+- `sf apex log get` — Retrieve Apex debug logs  
+- `sf apex log list` — List Apex debug logs  
+- `sf apex log tail` — Stream Apex debug logs  
 
-Metadata Commands
-    sfdx force:source:push — Push source to scratch org
-    sfdx force:source:pull — Pull source from scratch org
-    sfdx force:source:deploy — Deploy source to org
-    sfdx force:source:retrieve — Retrieve source from org
-    sfdx force:source:status — Show changes between local and org
-    sfdx force:source:convert — Convert source to metadata API format
-    sfdx force:mdapi:deploy — Deploy metadata API package
-    sfdx force:mdapi:retrieve — Retrieve metadata API package
-    sfdx force:mdapi:convert — Convert metadata API format to source format
+## Metadata Commands
+- `sf source push` — Push source to scratch org  
+- `sf source pull` — Pull source from scratch org  
+- `sf source deploy` — Deploy source to org  
+- `sf source retrieve` — Retrieve source from org  
+- `sf source status` — Show changes between local and org  
+- `sf source convert` — Convert source to metadata API format  
+- `sf mdapi deploy` — Deploy metadata API package  
+- `sf mdapi retrieve` — Retrieve metadata API package  
+- `sf mdapi convert` — Convert metadata API format to source format  
 
-User Commands
-    sfdx force:user:create — Create a user in scratch org
-    sfdx force:user:display — Display user info
-    sfdx force:user:password:generate — Generate user password
-    sfdx force:user:permset:assign — Assign permission set
+## User Commands
+- `sf user create` — Create a user in scratch org  
+- `sf user display` — Display user info  
+- `sf user password generate` — Generate user password  
+- `sf user permset assign` — Assign permission set  
 
-Package Commands
-    sfdx force:package:create — Create a package
-    sfdx force:package:version:create — Create a package version
-    sfdx force:package:install — Install package in org
-    sfdx force:package:uninstall — Uninstall package from org
-    sfdx force:package:version:list — List package versions
+## Package Commands
+- `sf package create` — Create a package  
+- `sf package version create` — Create a package version  
+- `sf package install` — Install package in org  
+- `sf package uninstall` — Uninstall package from org  
+- `sf package version list` — List package versions  
 
-Plugin Commands
-    sfdx plugins — List installed plugins
-    sfdx plugins:install — Install plugin
-    sfdx plugins:uninstall — Uninstall plugin
-    sfdx plugins:update — Update plugins
+## Plugin Commands
+- `sf plugins` — List installed plugins  
+- `sf plugins install` — Install plugin  
+- `sf plugins uninstall` — Uninstall plugin  
+- `sf plugins update` — Update plugins  
 
-Auth Commands
-    sfdx force:auth:web:login — Authenticate with org using web login
-    sfdx force:auth:logout — Log out from org
+## Auth Commands
+- `sf auth web login` — Authenticate with org using web login  
+- `sf auth logout` — Log out from org  
 
-Miscellaneous Commands
-    sfdx force:alias:set — Set an alias for an org
-    sfdx force:alias:list — List aliases
-    sfdx force:config:set — Set CLI config
-    sfdx force:config:get — Get CLI config
-    sfdx force:config:list — List CLI configs
-    sfdx force:org:status — Show org status
-    sfdx force:source:tracking:clear — Clear source tracking
+## Miscellaneous Commands
+- `sf alias set` — Set an alias for an org  
+- `sf alias list` — List aliases  
+- `sf config set` — Set CLI config  
+- `sf config get` — Get CLI config  
+- `sf config list` — List CLI configs  
+- `sf org status` — Show org status  
+- `sf source tracking clear` — Clear source tracking  
