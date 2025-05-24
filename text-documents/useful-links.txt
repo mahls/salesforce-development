@@ -1,0 +1,55 @@
+🔗 CRM & Salesforce Development Resource Links
+
+    Dev Hub Setup in Salesforce
+    https://neogen.lightning.force.com/lightning/setup/DevHub/home
+
+    Salesforce Developer Home
+    https://developer.salesforce.com/
+
+    Salesforce Documentation Portal
+    https://developer.salesforce.com/docs
+
+    What is Apex? (Apex Intro Guide)
+    https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_intro_what_is_apex.htm
+
+    Salesforce CLI (Command Line Interface)
+    https://developer.salesforce.com/tools/salesforcecli
+
+    Trailhead – Salesforce Learning Platform
+    https://trailhead.salesforce.com/
+
+    Apex Developer Guide
+    https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/
+
+    SOQL and SOSL Reference
+    https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/
+
+    Salesforce REST API Guide
+    https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/
+
+    Salesforce Metadata API Guide
+    https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/
+
+    Salesforce Stack Exchange (Q&A)
+    https://salesforce.stackexchange.com/
+
+    Salesforce Release Notes
+    https://releasenotes.docs.salesforce.com/
+
+    LWC Recipes (Sample Components on GitHub)
+    https://github.com/trailheadapps/lwc-recipes
+
+    Dreamhouse Sample App (GitHub)
+    https://github.com/dreamhouseapp/dreamhouse-sfdx
+
+    Salesforce Developer Forums
+    https://developer.salesforce.com/forums
+
+    Salesforce Discord (Unofficial)
+    https://unofficialsf.com/discord
+
+    Salesforce Developers Blog
+    https://developer.salesforce.com/blogs
+
+    Salesforce YouTube Channel
+    https://www.youtube.com/user/salesforce

@@ -1,0 +1,229 @@
+# Salesforce CLI (sf) - Command Examples
+======================================
+
+🧱 Project Setup
+----------------
+# Create a new Salesforce DX project
+sf project generate --name myProject
+
+# Navigate to the project directory
+cd myProject
+
+
+🔐 Authenticate to Salesforce Org
+---------------------------------
+# Log in to a Salesforce org via web and assign an alias
+sf org login web --alias myDevOrg
+
+
+🛠️ Development Commands
+------------------------
+# Create a Lightning Web Component
+sf lightning generate component --type lwc --name helloWorld
+
+# Create an Apex class
+sf apex generate class --name MyClass
+
+# Create an Apex trigger on Account
+sf apex generate trigger --name MyTrigger --sobject Account
+
+
+🚀 Source Deployment and Retrieval
+----------------------------------
+# Deploy local source to an org
+sf project deploy start --source-dir force-app --target-org myDevOrg
+
+# Retrieve metadata from org into project
+sf project retrieve start --metadata-dir force-app --target-org myDevOrg
+
+
+🧪 Apex Testing & Execution
+---------------------------
+# Run Apex tests by class name
+sf apex run test --classnames MyClassTest --result-format human --target-org myDevOrg
+
+# Execute anonymous Apex code from a file
+sf apex run --file scripts/anon.apex --target-org myDevOrg
+
+
+🔍 Data Management
+------------------
+# Query data with SOQL
+sf data query --query "SELECT Id, Name FROM Account LIMIT 5" --target-org myDevOrg
+
+# Create a new record
+sf data create record --sobject Account --values "Name='Test Account'" --target-org myDevOrg
+
+# Update an existing record
+sf data update record --sobject Account --record-id 001XXXXXXXXXXXXXXX --values "Name='Updated Account'" --target-org myDevOrg
+
+# Delete a record
+sf data delete record --sobject Account --record-id 001XXXXXXXXXXXXXXX --target-org myDevOrg
+
+
+🧾 Org Management
+-----------------
+# List all authenticated orgs
+sf org list
+
+# Open org in the browser
+sf org open --target-org myDevOrg
+
+# Delete a scratch org
+sf org delete scratch --target-org myScratchOrgAlias
+
+
+📦 Package Management
+---------------------
+# Create a package
+sf package create --name myPackage --description "My unlocked package" --package-type unlocked
+
+# Create a package version
+sf package version create --package myPackage --installation-key-bypass --wait 10
+
+
+📁 Retrieve Metadata from Manifest
+----------------------------------
+# Retrieve all metadata defined in manifest/package.xml
+sf project retrieve start --manifest manifest/package.xml --target-org myDevOrg
+
+
+✅ Common Flags
+---------------
+--target-org         Specify the alias or username for the org  
+--source-dir         Path to source folder  
+--metadata-dir       Path to where metadata will be retrieved  
+--query              SOQL query string  
+--file               Path to Apex file  
+--values             Field values for create/update operations  
+--loglevel debug     Enable verbose logging  
+
+
+---
+
+# Additional Salesforce CLI Commands Reference
+
+## Setup & Configuration
+
+- `sf login`  
+  Log into a Salesforce org interactively.
+
+- `sf logout`  
+  Log out from a Salesforce org.
+
+- `sf org list`  
+  List all authorized orgs.
+
+- `sf org display`  
+  Display details about a specific org.
+
+---
+
+## Project & Source Control
+
+- `sf project create --name <project-name>`  
+  Create a new Salesforce DX project.
+
+- `sf project deploy start --source-dir <path>`  
+  Deploy source metadata to an org.
+
+- `sf project retrieve start --manifest <manifest-file>`  
+  Retrieve metadata from an org using a manifest.
+
+- `sf project deploy cancel --job-id <job-id>`  
+  Cancel a running deployment.
+
+---
+
+## Apex & Lightning Development
+
+- `sf apex run --apex-code "<code>"`  
+  Run anonymous Apex code.
+
+- `sf apex execute --file <file>`  
+  Execute Apex code from a file.
+
+- `sf apex test run`  
+  Run Apex tests.
+
+- `sf lightning start`  
+  Create a Lightning Web Component (LWC) or Aura component.
+
+---
+
+## Data Management
+
+- `sf data tree export --query "<SOQL>" --outputdir <folder>`  
+  Export data records as JSON.
+
+- `sf data tree import --plan <plan-file>`  
+  Import data from JSON.
+
+- `sf data query --query "<SOQL>"`  
+  Query data using SOQL.
+
+- `sf data delete --sobjecttype <object> --where "<condition>"`  
+  Delete records matching condition.
+
+---
+
+## Org Management & Info
+
+- `sf org open`  
+  Open the default org in the browser.
+
+- `sf org create scratch --definition-file <file>`  
+  Create a scratch org from a definition file.
+
+- `sf org delete --target-org <alias>`  
+  Delete a scratch org.
+
+---
+
+## Packaging & Releases
+
+- `sf package create --name <package-name>`  
+  Create an unlocked package.
+
+- `sf package version create --package <package-id> --installationkeybypass`  
+  Create a new package version.
+
+- `sf package install --package <package-id>`  
+  Install a package into an org.
+
+---
+
+## Automation & CI/CD
+
+- `sf deploy start --source-dir force-app`  
+  Deploy source metadata.
+
+- `sf retrieve start --manifest package.xml`  
+  Retrieve metadata.
+
+- `sf deploy report --job-id <job-id>`  
+  Check deployment status.
+
+---
+
+## Miscellaneous
+
+- `sf help`  
+  Show help information for sf commands.
+
+- `sf --version`  
+  Display the Salesforce CLI version.
+
+---
+
+# Notes
+
+- Use `sf <command> --help` to get detailed usage and options for any command.  
+- Replace placeholders like `<project-name>`, `<file>`, `<package-id>` with your actual values.
+
+---
+
+**Official Documentation:**  
+[https://developer.salesforce.com/docs/salesforce-cli/](https://developer.salesforce.com/docs/salesforce-cli/)
+
+---
